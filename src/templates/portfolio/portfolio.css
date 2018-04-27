@@ -1,0 +1,246 @@
+/* Header */
+
+.Portfolio{
+    overflow-x: hidden;
+}
+#navbar{
+    width: 100%;
+    height: 60px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    position: fixed;
+    top: 0;
+    font-size: 30px;
+    transition: all .5s ease;
+    padding-top: 10px;
+}
+.headerList{
+    font-family: helvetica;
+    color: black;
+    display: inline-block;
+    width: 50%;
+}
+.open{
+    height: 50px !important;
+    font-size: 27px !important;
+    padding-top: 5px !important;
+    background-color: black;
+}
+.open .headerList{
+    color: white;
+}
+.infoWrap{
+    width: 100%;
+    margin-top: 35vh;
+}
+.mainWrapTitle{
+    font: 80px helvetica;
+    color: white;
+}
+.mainWrapSubTitle{
+    font: 40px helvetica;
+    color: white;
+}
+.main-image{
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../img/picknick.jpg');
+}
+
+/* Home body */
+
+.homeWrap{
+    min-height: 100vh;
+    margin-top: 90vh;
+    background-color: white;
+}
+
+/* portfolio */
+
+.portfolioTitle{
+    padding-top: 35px;
+    font: 40px helvetica;
+    color: black;
+}
+.portfolioSubTitle{
+    margin-top: 15px;
+    font: 20px helvetica;
+    color: darkgrey;
+}
+.portfolioWrap{
+    max-width: 1100px;
+    margin: 60px auto 50px;
+}
+.project{
+    min-width: 250px;
+    width: 30%;
+    /* height: 300px; */
+    height: 24vw;
+    min-height: 250px;
+    max-height: 300px;
+    display: inline-block;
+    margin: 30px .5%;
+}
+.project:hover{
+    box-shadow: 0px 0px 10px grey;
+}
+.projectImage{
+    height: calc(100% - 50px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projectInfo{
+    height: 50px;
+    background-color: white;
+}
+.projectInfoTitle{
+    font: 20px helvetica;
+    color: black;
+}
+.projectInfoSubTitle{
+    margin-top: 5px;
+    font: 15px helvetica;
+    color: darkgrey;
+}
+.rooming{
+    background-image: url('../../img/saltlake.jpg');
+}
+.dayoff{
+    background-image: url('../../img/arches.jpg');
+}
+.desktop{
+    background-image: url('../../img/provo.jpg');
+}
+.mobile{
+    background-image: url('../../img/tablefood.jpg');
+}
+
+/* about */
+
+.aboutWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../img/eating.jpg');
+}
+.aboutFix{
+    position: fixed;
+    margin: 0 !important;
+}
+#aboutSpacer{
+    height: 200vh;
+    position: relative;
+}
+#aboutDimmer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.dimmerOn{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.about{
+    transform: translateX(-200%);
+    transition: all .5s ease;
+}
+.aboutRight{
+    transform: translateX(200%);
+    transition: all .5s ease;
+}
+.aboutOn{
+    transform: translate(0);
+    color: black;
+}
+
+
+/* footer */
+
+.footerWrap{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(114, 114, 114);
+    height: 0px;
+    transition: all .5s ease;
+}
+.footerOn{
+    height: 170px;
+}
+
+.footerTitle{
+    padding-top: 30px;
+    font: 55px helvetica;
+    color: white;
+}
+.footerSubTitle{
+    margin-top: 15px;
+    font: 20px helvetica;
+    color: white;
+}
+
+/* Modals */
+
+.modal{
+    position: fixed;
+}
+.modalBody{
+    position: absolute;
+}
+
+/* Queries */
+
+@media screen and (max-width: 900px){
+    .project{
+        min-width: 250px;
+        width: 43%;
+        /* height: 300px; */
+        height: 24vw;
+        min-height: 250px;
+        max-height: 300px;
+        display: inline-block;
+        margin: 30px .5%;
+    }
+    .mainWrapTitle{
+        font-size: 62px;
+    }
+
+}
+@media screen and (max-width: 700px){
+
+}
+@media screen and (max-width: 550px){
+    .project{
+        min-width: 250px;
+        width: 85%;
+        /* height: 300px; */
+        height: 24vw;
+        min-height: 250px;
+        max-height: 300px;
+        display: inline-block;
+        margin: 30px .5%;
+    }
+    .mainWrapTitle{
+        font-size: 55px;
+    }
+    .mainWrapSubTitle{
+        font-size: 30px;
+    }
+
+}
